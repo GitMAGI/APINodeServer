@@ -1,0 +1,32 @@
+{
+  "name": "apinodeserver",
+  "version": "1.0.0",
+  "description": "API Server based on Express",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.23.0",
+    "sqlite3": "^4.0.6",
+    "sequelize": "^4.42.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitMAGI/APINodeServer.git"
+  },
+  "author": "Leonardo Paglionico <leonardo.paglionico@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitMAGI/APINodeServer/issues"
+  },
+  "homepage": "https://github.com/GitMAGI/APINodeServer#readme"
+}
