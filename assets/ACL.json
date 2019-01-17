@@ -1,18 +1,11 @@
 [
 	{
-		"Subject": "admin",
+		"Subject": "admin-group",
 		"Action": "*",
 		"Object": "*"
 	},
 	{
-		"Subject": "SomeReaderOnly",
-		"Action": "*",
-		"Object": [
-			"/"
-		]
-	},
-	{
-		"Subject": "user-group-read-1",
+		"Subject": "user-1-read-group",
 		"Action": [
 			"get"
 		],
@@ -23,7 +16,7 @@
 		]
 	},
 	{
-		"Subject": "user-group-full-1",
+		"Subject": "user-1-full-group",
 		"Action": [
 			"post", 
 			"put", 
@@ -37,7 +30,7 @@
 		]
 	},
 	{
-		"Subject": "user-group-admin-1",
+		"Subject": "user-1-admin-group",
 		"Action": [
 			"post", 
 			"put", 
@@ -47,7 +40,7 @@
 		"Object": [
 			"/tests-all", 
 			"/tests-all/:id",
-			"/tests-all/:test-id}/atts/:att-id",
+			"/tests-all/:test-id/atts/:att-id",
 			"/tests",
 			"/tests/:id",
 			"tests/:test-id/atts/:att-id"

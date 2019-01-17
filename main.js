@@ -15,11 +15,21 @@ const https_options = {
 
 const app = require('./lib/core');
 
-http.createServer(app).listen(app_http_port, app_hostname, null, serverBootHandler);
-https.createServer(https_options, app).listen(app_https_port, app_hostname, null, serverBootHandler);
+http.createServer(app).listen(app_http_port, app_hostname, null, serverBootHttp);
+https.createServer(https_options, app).listen(app_https_port, app_hostname, null, serverBootHttps);
 
-function serverBootHandler(){
+function serverBootHttp(){
     let _port = this.address().port;
     let _address = this.address().address;
-    logger.info(uuidv1().toLowerCase(), "Server is listening to " + _address + ":" + _port);
+    let _full_address = "http://" + _address + ":" + _port;
+    let _full_hostname = "http://" + app_hostname + ":" + _port;    
+    logger.info(uuidv1().toLowerCase(), "Server is listening at " + _full_address + " or " + _full_hostname);
+}
+
+function serverBootHttps(){
+    let _port = this.address().port;
+    let _address = this.address().address;
+    let _full_address = "https://" + _address + ":" + _port;
+    let _full_hostname = "https://" + app_hostname + ":" + _port;
+    logger.info(uuidv1().toLowerCase(), "Server is listening at " + _full_address + " or " + _full_hostname);
 }
