@@ -4,7 +4,9 @@ module.exports = {
 }
 
 function home_get_handler(request, response){
-    response.status(200).send('Ok');
+    response.status(200);
+    response.setHeader('Content-Type', 'plain/text');
+    response.send('Ok');
 }
 
 function user_post_handler(request, response){
