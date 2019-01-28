@@ -9,7 +9,7 @@ config.https_options_cert_pathfilename = "/Temp/APINodeServer.local/certificates
 config.app_authentication_path = "/v1/auth";
 
 config.jwt_secret = "5QApqHFhIxT1Tb5hfaFp7G6XyNDrXFfR";
-config.jwt_mins_validity = 1;
+config.jwt_mins_validity = 100;
 
 config.journal_file_prefixname = 'journal';
 config.journal_file_path = '/Temp/APINodeServer.local/logs/';
