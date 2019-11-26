@@ -1,0 +1,51 @@
+[
+	{
+		"Subject": "admin",
+		"Action": "*",
+		"Object": "*"
+	},	
+	{
+		"Subject": "user-group-read-1",
+		"Action": [
+			"get"
+		],
+		"Object": [
+			"/tests", 
+			"/tests/:id", 
+			"/tests/:testid/atts/:attid",
+			"/users/",
+			"/users/:id"
+		]
+	},
+	{
+		"Subject": "user-group-full-1",
+		"Action": [
+			"post", 
+			"put", 
+			"get", 
+			"delete"
+		],
+		"Object": [
+			"/tests", 
+			"/tests/:id", 
+			"/tests/:testid/atts/:attid"
+		]
+	},
+	{
+		"Subject": "user-group-admin-1",
+		"Action": [
+			"post", 
+			"put", 
+			"get", 
+			"delete"
+		],
+		"Object": [
+			"/tests-all", 
+			"/tests-all/:id",
+			"/tests-all/:testid/atts/:attid",
+			"/tests",
+			"/tests/:id",
+			"/tests/:testid/atts/:attid"
+		]
+	}
+]
