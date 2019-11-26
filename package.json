@@ -12,8 +12,8 @@
     "jsonwebtoken": "^8.4.0",
     "mime-types": "^2.1.21",
     "moment": "^2.23.0",
-    "sequelize": "^4.42.0",
-    "sqlite3": "^4.0.6",
+    "sequelize": "^4.44.3",
+    "sqlite3": "^4.1.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {},

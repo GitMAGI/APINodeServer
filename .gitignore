@@ -1,3 +1,5 @@
 node_modules/
-assets/
+npm-debug.log
 scripts/*
+local/logs/*
+local/assets/ServerJournal.db3

@@ -5,7 +5,7 @@
 		"Object": "*"
 	},	
 	{
-		"Subject": "user-group-read-1",
+		"Subject": "user-read-group-1",
 		"Action": [
 			"get"
 		],
@@ -18,7 +18,7 @@
 		]
 	},
 	{
-		"Subject": "user-group-full-1",
+		"Subject": "user-full-group-1",
 		"Action": [
 			"post", 
 			"put", 
@@ -32,7 +32,7 @@
 		]
 	},
 	{
-		"Subject": "user-group-admin-1",
+		"Subject": "user-admin-group-1",
 		"Action": [
 			"post", 
 			"put", 
