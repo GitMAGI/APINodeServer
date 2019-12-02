@@ -1,6 +1,6 @@
 const config = {};
 
-config.app_hostname = "node1";
+config.app_hostname = "0.0.0.0";
 config.app_http_port =  8080;
 config.app_https_port = 443;
 config.https_options_key_pathfilename = "local/certificates/key-20190111-162019.pem";
