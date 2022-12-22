@@ -9,7 +9,7 @@
   "dependencies": {
     "compression": "^1.7.3",
     "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "mime-types": "^2.1.21",
     "moment": "^2.23.0",
     "sequelize": "^4.44.3",
